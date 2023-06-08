@@ -1,0 +1,16 @@
+C:\Users\Luiz Felipe-Gostosão\source\repos\JuniorS4ETest\JuniorS4ETest\obj\Debug\JuniorS4ETest.vbproj.GenerateResource.cache
+C:\Users\Luiz Felipe-Gostosão\source\repos\JuniorS4ETest\JuniorS4ETest\obj\Debug\JuniorS4ETest.vbproj.CoreCompileInputs.cache
+C:\Users\Luiz Felipe-Gostosão\source\repos\JuniorS4ETest\JuniorS4ETest\bin\Debug\JuniorS4ETest.exe.config
+C:\Users\Luiz Felipe-Gostosão\source\repos\JuniorS4ETest\JuniorS4ETest\bin\Debug\JuniorS4ETest.exe
+C:\Users\Luiz Felipe-Gostosão\source\repos\JuniorS4ETest\JuniorS4ETest\bin\Debug\JuniorS4ETest.pdb
+C:\Users\Luiz Felipe-Gostosão\source\repos\JuniorS4ETest\JuniorS4ETest\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Luiz Felipe-Gostosão\source\repos\JuniorS4ETest\JuniorS4ETest\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Luiz Felipe-Gostosão\source\repos\JuniorS4ETest\JuniorS4ETest\obj\Debug\JuniorS4ETest.vbproj.CopyComplete
+C:\Users\Luiz Felipe-Gostosão\source\repos\JuniorS4ETest\JuniorS4ETest\obj\Debug\JuniorS4ETest.exe
+C:\Users\Luiz Felipe-Gostosão\source\repos\JuniorS4ETest\JuniorS4ETest\obj\Debug\JuniorS4ETest.pdb
+C:\Users\Luiz Felipe-Gostosão\source\repos\JuniorS4ETest\JuniorS4ETest\obj\Debug\JuniorS4ETest.vbproj.AssemblyReference.cache
+C:\Users\Luiz Felipe-Gostosão\source\repos\JuniorS4ETest\JuniorS4ETest\obj\Debug\JuniorS4ETest.Resources.resources
+C:\Users\Luiz Felipe-Gostosão\source\repos\JuniorS4ETest\JuniorS4ETest\obj\Debug\JuniorS4ETest.associate.resources
+C:\Users\Luiz Felipe-Gostosão\source\repos\JuniorS4ETest\JuniorS4ETest\obj\Debug\JuniorS4ETest.company.resources
+C:\Users\Luiz Felipe-Gostosão\source\repos\JuniorS4ETest\JuniorS4ETest\obj\Debug\JuniorS4ETest.menu.resources
+C:\Users\Luiz Felipe-Gostosão\source\repos\JuniorS4ETest\JuniorS4ETest\obj\Debug\JuniorS4ETest.welcome.resources

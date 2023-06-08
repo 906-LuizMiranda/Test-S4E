@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{458FF2FF-380B-4AB9-9ED7-F35370E3EFC2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>JuniorS4ETest</RootNamespace>
+    <AssemblyName>JuniorS4ETest</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Empty</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>JuniorS4ETest.welcome</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WF\associate.resx">
+      <DependentUpon>associate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WF\company.resx">
+      <DependentUpon>company.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WF\menu.resx">
+      <DependentUpon>menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WF\welcome.resx">
+      <DependentUpon>welcome.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.5, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.5\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTO\Companys.vb" />
+    <Compile Include="DAL\FunctionCompanys.vb" />
+    <Compile Include="DAL\FunctionAssociates.vb" />
+    <Compile Include="DTO\Associates.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WF\associate.Designer.vb">
+      <DependentUpon>associate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WF\associate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WF\company.Designer.vb">
+      <DependentUpon>company.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WF\company.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WF\menu.Designer.vb">
+      <DependentUpon>menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WF\menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="WF\welcome.Designer.vb">
+      <DependentUpon>welcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WF\welcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Migrations\Scripits_CreatTable\AssociateCompany.sql" />
+    <Content Include="Migrations\Scripits_CreatTable\Associates.sql" />
+    <Content Include="Migrations\Scripits_CreatTable\Companys.sql" />
+    <Content Include="Migrations\Scripts_Procedures\SP_DeletionAssociateCompanyByAssociateIdAndCompanyId.sql" />
+    <Content Include="Migrations\Scripts_Procedures\SP_GetAssociateByCpf.sql" />
+    <Content Include="Migrations\Scripts_Procedures\SP_GetAssociateById.sql" />
+    <Content Include="Migrations\Scripts_Procedures\SP_GetCompanyByCnpj.sql" />
+    <Content Include="Migrations\Scripts_Procedures\SP_GetCompanyById.sql" />
+    <Content Include="Migrations\Scripts_Procedures\SP_GetListAssociate.sql" />
+    <Content Include="Migrations\Scripts_Procedures\SP_GetListCompany.sql" />
+    <Content Include="Migrations\Scripts_Procedures\Sp_InsertAssociate.sql" />
+    <Content Include="Migrations\Scripts_Procedures\SP_InsertAssociateCompany.sql" />
+    <Content Include="Migrations\Scripts_Procedures\SP_InsertCompany.sql" />
+    <Content Include="Migrations\Scripts_Procedures\SP_UpdateAssociate.sql" />
+    <Content Include="Migrations\Scripts_Procedures\SP_UpdateAssociateByCpfDeletionDate.sql" />
+    <Content Include="Migrations\Scripts_Procedures\SP_UpdateAssociateByIdAndDeletionDate.sql" />
+    <Content Include="Migrations\Scripts_Procedures\SP_UpdateAssociateCompanyByAssociateIdAndDeletionDate.sql" />
+    <Content Include="Migrations\Scripts_Procedures\SP_UpdateCompanyAssociateByCompanyIdAndDeletionDate.sql" />
+    <Content Include="Migrations\Scripts_Procedures\SP_UpdateCompanyByIdAndDeletionDate.sql" />
+    <Content Include="Migrations\Scripts_Procedures\SP_UpdateCompayByCnpjAndDeletionDate.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
